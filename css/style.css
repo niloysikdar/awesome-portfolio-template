@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
+:root {
+    --lightblack : #111122;
+    --lightblue : #1b83d8;
+    --white : #ffffff;
+    --darkblue : #104c7e;
+}
+
 *
 {
     margin: 0;
@@ -13,16 +20,17 @@ header {
     left: 0;
     top: 0;
     width: 100%;
-    padding: 2rem 3rem;
+    padding: 1.5rem 3rem;
     z-index: 100;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: var(--lightblack);
 }
 
 .logo {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--white);
     font-size: 2rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -42,7 +50,7 @@ header ul li {
 header ul li a {
     position: relative;
     text-decoration: none;
-    color: #ffffff;
+    color: var(--white);
     margin: 0 1.5rem;
     font-size: 1.5rem;
 }
@@ -50,11 +58,8 @@ header ul li a {
 .banner {
     position: relative;
     min-height: 100vh;
-    background: #111121;
-    /* background: url(../assets/images/bg2.png);
-    background-size: cover;
-    background-repeat: no-repeat; */
-    padding-left: 3rem;
+    background: var(--lightblack);
+    padding: 0rem 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,7 +67,7 @@ header ul li a {
 
 .banner h2 {
     font-size: 2.6rem;
-    color: #ffffff;
+    color: var(--white);
     font-weight: 500;
     line-height: 3.5rem;
 }
@@ -74,16 +79,16 @@ header ul li a {
 }
 
 .banner h3 {
-    color: #ffffff;
+    color: var(--white);
     font-size: 2rem;
     font-weight: 500;
 }
 
 .btn {
     position: relative;
-    background: #1b83d8;
+    background: var(--lightblue);
     display: inline-block;
-    color: #ffffff;
+    color: var(--white);
     text-decoration: none;
     padding: 0.4rem 1.3rem;
     border-radius: 2rem;
@@ -97,6 +102,59 @@ header ul li a {
 }
 
 .btn:hover {
-    background: #104c7e;
+    background: var(--darkblue);
     font-size: 1.6rem;
+}
+
+.developer {
+    margin-left: 5rem;
+}
+
+.developer-img {
+    width: 50rem;
+}
+
+.about {
+    width: 100%;
+    padding: 3rem 6rem;
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+}
+
+.heading h2 {
+    font-size: 3rem;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.about-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image .image{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50rem;
+}
+
+.contentbox {
+    margin-left: 5rem;
+}
+
+.contentbox h3{
+    font-size: 2rem;
+}
+
+.contentbox p {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
 }
