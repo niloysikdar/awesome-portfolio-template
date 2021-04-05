@@ -20,16 +20,15 @@
 }
 
 .skills-img {
-    width: 35%;
+    width: 38%;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .skills-img img {
     width: 100%;
     border-radius: 20px;
-    margin-top: 2rem;
 }
 
 .skills-field {
