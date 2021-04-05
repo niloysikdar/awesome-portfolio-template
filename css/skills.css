@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --lightblack : #111122;
+    --lightblue : #1b83d8;
+    --white : #ffffff;
+    --darkblue : #104c7e;
+}
+
+.skills {
+    width: 100%;
+    background: var(--lightblack);
+    color: var(--white);
+    margin-top: 5rem;
+    padding: 3rem 5rem;
+}
+
+.skill-content {
+    display: flex;
+}
+
+.skills-img {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.skills-img img {
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 2rem;
+}
+
+.skills-field {
+    width: 60%;
+    margin-left: 5rem;
+}
+
+.skills-field li {
+    margin:  20px 0;
+    list-style: none;
+}
+
+.skills-field h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.bar {
+    background: #353b48;
+    display: block;
+    height: 10px;
+    border:  1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px var(--darkblue);
+}
+
+.bar span {
+    height: 10px;
+    float: left;
+    background: var(--lightblue);
+}
+
+.flutter {
+    width: 80%;
+    animation: percent80 2s;
+}
+
+.firebase {
+    width: 80%;
+    animation: percent80 2s;
+}
+
+.html {
+    width: 70%;
+    animation: percent70 2s;
+}
+
+.css {
+    width: 80%;
+    animation: percent80 2s;
+}
+
+.js {
+    width: 60%;
+    animation: percent60 2s;
+}
+
+.python {
+    width: 70%;
+    animation: percent70 2s;
+}
+
+.git {
+    width: 90%;
+    animation: percent90 2s;
+}
+
+.api {
+    width: 60%;
+    animation: percent60 2s;
+}
+
+.web-auto {
+    width: 70%;
+    animation: percent70 2s;
+}
+
+.web-scrap {
+    width: 70%;
+    animation: percent70 2s;
+}
+
+@keyframes percent60 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes percent70 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes percent80 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes percent90 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
