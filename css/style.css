@@ -7,6 +7,15 @@
     --darkblue : #104c7e;
 }
 
+::-webkit-scrollbar {
+    width: 5px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: var(--lightblue);
+}
+
 *
 {
     margin: 0;
@@ -112,7 +121,7 @@ header ul li a {
 }
 
 .developer-img {
-    width: 50rem;
+    width: 47rem;
 }
 
 .about {

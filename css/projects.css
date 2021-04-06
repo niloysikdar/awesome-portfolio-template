@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --lightblack : #111122;
+    --lightblue : #1b83d8;
+    --white : #ffffff;
+    --darkblue : #104c7e;
+}
+
+.projects {
+    width: 100%;
+    padding: 2rem 4rem;
+    padding-top: 7rem;
+}
+
+.project-wrapper {
+    padding-top: 2rem;
+}
