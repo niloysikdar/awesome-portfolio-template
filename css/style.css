@@ -47,17 +47,17 @@ header {
     letter-spacing: 2px;
 }
 
-header .toggle ul {
+header ul {
     position: relative;
     display: flex;
 }
 
-header .toggle ul li {
+header ul li {
     position: relative;
     list-style: none;
 }
 
-header .toggle ul li a {
+header ul li a {
     position: relative;
     text-decoration: none;
     color: var(--white);
