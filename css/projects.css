@@ -35,7 +35,8 @@
 }
 
 .projects .project-wrapper .card img {
-    /* border-radius: 20px 20px 8px 8px; */
+    height: 13rem;
+    width: 100%;
 }
 
 .projects .project-wrapper .card .card-content {
