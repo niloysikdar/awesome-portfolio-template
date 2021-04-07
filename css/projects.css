@@ -9,10 +9,55 @@
 
 .projects {
     width: 100%;
-    padding: 2rem 4rem;
-    padding-top: 7rem;
+    padding: 7rem 4rem 2rem;
 }
 
-.project-wrapper {
-    padding-top: 2rem;
+.projects .project-wrapper {
+    margin: 1.6rem auto;
+}
+
+.projects .project-wrapper .card {
+    margin: 1rem 0;
+    text-align: center;
+    border: none;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    /* /* border: 2px solid var(--darkblue); */
+    /* padding: 10px; */
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.projects .project-wrapper .card:hover {
+    transform: translateY(-15px) scale(1.015);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.projects .project-wrapper .card img {
+    /* border-radius: 20px 20px 8px 8px; */
+}
+
+.projects .project-wrapper .card .card-content {
+    padding:  0rem 1rem 1rem;
+}
+
+.projects .project-wrapper .card .card-content .card-header {
+    border: none;
+    background: transparent;
+}
+
+.projects .project-wrapper .card .card-content .card-des {
+    text-align: justify;
+}
+
+.projects .project-wrapper .card .card-content .card-btn {
+    background: var(--lightblue);
+    outline: none;
+    border: none;
+    padding: 8px 18px;
+    color: var(--white);
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
 }

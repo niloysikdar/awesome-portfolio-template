@@ -8,7 +8,8 @@
 }
 
 ::-webkit-scrollbar {
-    width: 5px;  /* Remove scrollbar space */
+    width: 5px;
+    height: 5px;  /* Remove scrollbar space */
     background: transparent;  /* Optional: just make scrollbar invisible */
 }
 /* Optional: show position indicator in red */
@@ -34,11 +35,17 @@ header {
     z-index: 100;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     background: var(--lightblack);
+    display: none;
 }
 
-.logo {
+header.padding {
+    padding: 1rem 3rem 0.6rem;
+    display: flex;
+}
+
+header a.logo {
     text-decoration: none;
     color: var(--white);
     font-size: 2rem;
@@ -47,18 +54,16 @@ header {
     letter-spacing: 2px;
 }
 
-header ul {
+header div.toggle ul {
     position: relative;
     display: flex;
 }
 
-header ul li {
-    position: relative;
+header div.toggle ul li {
     list-style: none;
 }
 
-header ul li a {
-    position: relative;
+header div.toggle ul li a {
     text-decoration: none;
     color: var(--white);
     margin: 0 1.5rem;
@@ -69,10 +74,11 @@ header ul li a {
     position: relative;
     min-height: 100vh;
     background: var(--lightblack);
-    padding: 0rem 4rem;
+    padding: 5rem 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .banner h2 {
@@ -94,7 +100,7 @@ header ul li a {
     font-weight: 500;
 }
 
-.btn {
+.banner .textbox .btn {
     position: relative;
     background: var(--lightblue);
     display: inline-block;
@@ -111,7 +117,7 @@ header ul li a {
     transition: 0.5s;
 }
 
-.btn:hover {
+.banner .textbox .btn:hover {
     background: var(--darkblue);
     font-size: 1.6rem;
 }

@@ -5,10 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"> -->
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/skills.css">
   <link rel="stylesheet" href="./css/projects.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script defer src="./js/index.js"></script>
   <script defer src="./js/projects.js"></script>
 </head>
@@ -21,7 +22,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#">Education</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#">Projects</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#">Articles</a></li>
       </ul>
     </div>
@@ -33,7 +34,7 @@
       <a href="#" class="btn">Resume</a>
     </div>
     <div class="developer">
-      <img src="./assets/images/developer.svg" class="developer-img">
+      <img src="./assets/images/developer.svg" class="developer-img img-fluid">
     </div>
   </section>
   <section class="about" id="about">
@@ -157,15 +158,14 @@
       </div>
     </div>
   </section>
-  <!-- <section class="projects">
+  <section class="projects" id="projects">
     <div class="heading">
       <h2>Projects</h2>
     </div>
-    <div class="project-wrapper">
-      <div class="col-md-3">
+    <div class="project-wrapper row">
+      <div class="col-lg-3 col-md-4">
         <div class="card">
-          <img src="https://images.unsplash.com/photo-1593642634524-b40b5baae6bb?auto=format&fit=crop&w=200&q=20"
-            alt="">
+          <img src="https://picsum.photos/500/300" alt="">
           <div class="card-content">
             <h1 class="card-header">Card 1</h1>
             <p class="card-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere odit aperiam sunt fuga
@@ -175,10 +175,9 @@
           </div>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-lg-3 col-md-4">
         <div class="card">
-          <img src="https://images.unsplash.com/photo-1593642634524-b40b5baae6bb?auto=format&fit=crop&w=200&q=20"
-            alt="">
+          <img src="https://picsum.photos/501/300" alt="">
           <div class="card-content">
             <h1 class="card-header">Card 2</h1>
             <p class="card-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere odit aperiam sunt fuga
@@ -188,9 +187,9 @@
           </div>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-lg-3 col-md-4">
         <div class="card">
-          <img src="https://images.unsplash.com/photo-1593642634524-b40b5baae6bb?auto=format&fit=crop&w=200&q=20"
+          <img src="https://picsum.photos/502/300"
             alt="">
           <div class="card-content">
             <h1 class="card-header">Card 3</h1>
@@ -201,9 +200,9 @@
           </div>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-lg-3 col-md-4">
         <div class="card">
-          <img src="https://images.unsplash.com/photo-1593642634524-b40b5baae6bb?auto=format&fit=crop&w=200&q=20"
+          <img src="https://picsum.photos/503/300"
             alt="">
           <div class="card-content">
             <h1 class="card-header">Card 2</h1>
@@ -214,9 +213,9 @@
           </div>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-lg-3 col-md-4">
         <div class="card">
-          <img src="https://images.unsplash.com/photo-1593642634524-b40b5baae6bb?auto=format&fit=crop&w=200&q=20"
+          <img src="https://picsum.photos/504/300"
             alt="">
           <div class="card-content">
             <h1 class="card-header">Card 3</h1>
@@ -228,7 +227,7 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
   <!-- <section class="articles">
     <div class="heading">
       <h2>Articles</h2>
