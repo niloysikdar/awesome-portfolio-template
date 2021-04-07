@@ -34,6 +34,8 @@
 .projects .project-wrapper .card img {
     height: 13rem;
     width: 100%;
+    display: block;
+    object-fit: cover;
 }
 
 .projects .project-wrapper .card .card-content {
