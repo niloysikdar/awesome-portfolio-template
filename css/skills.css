@@ -63,54 +63,44 @@
     background: var(--lightblue);
 }
 
-.flutter {
+.skill1 {
     width: 80%;
     animation: percent80 2s;
 }
 
-.firebase {
+.skill2 {
     width: 80%;
     animation: percent80 2s;
 }
 
-.html {
+.skill3 {
     width: 70%;
     animation: percent70 2s;
 }
 
-.css {
+.skill4 {
     width: 80%;
     animation: percent80 2s;
 }
 
-.js {
+.skill5 {
     width: 60%;
     animation: percent60 2s;
 }
 
-.python {
+.skill6 {
     width: 70%;
     animation: percent70 2s;
 }
 
-.git {
+.skill7 {
     width: 90%;
     animation: percent90 2s;
 }
 
-.api {
+.skill8 {
     width: 60%;
     animation: percent60 2s;
-}
-
-.web-auto {
-    width: 70%;
-    animation: percent70 2s;
-}
-
-.web-scrap {
-    width: 70%;
-    animation: percent70 2s;
 }
 
 @keyframes percent60 {
