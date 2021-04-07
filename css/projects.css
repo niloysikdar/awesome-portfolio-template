@@ -21,12 +21,9 @@
     text-align: center;
     border: none;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-    /* /* border: 2px solid var(--darkblue); */
-    /* padding: 10px; */
     border-radius: 20px;
     overflow: hidden;
     transition: 0.4s;
-    cursor: pointer;
 }
 
 .projects .project-wrapper .card:hover {
@@ -35,7 +32,10 @@
 }
 
 .projects .project-wrapper .card img {
-    /* border-radius: 20px 20px 8px 8px; */
+    height: 13rem;
+    width: 100%;
+    display: block;
+    object-fit: cover;
 }
 
 .projects .project-wrapper .card .card-content {
@@ -49,6 +49,12 @@
 
 .projects .project-wrapper .card .card-content .card-des {
     text-align: justify;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    margin-bottom: 1.5rem;
 }
 
 .projects .project-wrapper .card .card-content .card-btn {
