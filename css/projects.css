@@ -21,8 +21,6 @@
     text-align: center;
     border: none;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-    /* /* border: 2px solid var(--darkblue); */
-    /* padding: 10px; */
     border-radius: 20px;
     overflow: hidden;
     transition: 0.4s;
@@ -50,6 +48,12 @@
 
 .projects .project-wrapper .card .card-content .card-des {
     text-align: justify;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    margin-bottom: 1.5rem;
 }
 
 .projects .project-wrapper .card .card-content .card-btn {
