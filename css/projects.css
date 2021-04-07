@@ -24,7 +24,6 @@
     border-radius: 20px;
     overflow: hidden;
     transition: 0.4s;
-    cursor: pointer;
 }
 
 .projects .project-wrapper .card:hover {
