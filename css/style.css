@@ -26,6 +26,10 @@
     scroll-behavior: smooth;
 }
 
+.container {
+    margin: 0px;
+}
+
 header {
     position: fixed;
     left: 0;
@@ -132,17 +136,21 @@ header div.toggle ul li a {
 
 .about {
     width: 100%;
-    padding: 3rem 6rem;
-    padding-top: 7rem;
+    padding: 4%;
 }
 
 .heading {
     width: 100%;
     text-align: center;
+    margin-bottom: 15px;
 }
 
 .heading h2 {
     font-size: 3rem;
+}
+
+div.det {
+    margin-bottom: 15px;
 }
 
 .content {
