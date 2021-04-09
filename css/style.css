@@ -1,24 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
 
 :root {
-    --lightblack : #111122;
-    --lightblue : #1b83d8;
-    --white : #ffffff;
-    --darkblue : #104c7e;
+    --lightblack: #111122;
+    --lightblue: #1b83d8;
+    --white: #ffffff;
+    --lightwhite: #f1f6f9;
+    --lightgrey: #9ba4b4;
+    --darkblue: #104c7e;
+    --lightyellow: #fddb3a;
 }
 
 ::-webkit-scrollbar {
     width: 5px;
-    height: 5px;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
+    height: 5px; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
 }
 /* Optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
     background: var(--lightblue);
 }
 
-*
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -35,27 +38,28 @@ header {
     left: 0;
     top: 0;
     width: 100%;
-    padding: 1.5rem 3rem;
+    padding: 1.5rem 4rem;
     z-index: 100;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     background: var(--lightblack);
-    display: none;
+    transition: all 0.3s ease;
 }
 
 header.padding {
-    padding: 1rem 3rem 0.6rem;
-    display: flex;
+    padding: 0.8rem 3rem 0.8rem;
+    box-shadow: 0 6px 16px rgb(10, 10, 24, 0.3);
 }
 
 header a.logo {
     text-decoration: none;
     color: var(--white);
-    font-size: 2rem;
+    margin: auto 0;
+    font-size: 2.4rem;
     font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    font-family: "Itim", sans-serif;
+    letter-spacing: 1.5px;
 }
 
 header div.toggle ul {
@@ -65,13 +69,39 @@ header div.toggle ul {
 
 header div.toggle ul li {
     list-style: none;
+    margin: 1rem 0 0;
 }
 
 header div.toggle ul li a {
+    position: relative;
     text-decoration: none;
     color: var(--white);
-    margin: 0 1.5rem;
-    font-size: 1.5rem;
+    margin: auto 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1.4px;
+    transition: all 0.3s ease;
+}
+
+header div.toggle ul li a:after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--lightyellow);
+    border-radius: 2px;
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.3s ease;
+}
+
+header div.toggle ul li a:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+header div.toggle ul li a:hover:after {
+    transform: scale(1, 1);
 }
 
 .banner {
@@ -85,53 +115,125 @@ header div.toggle ul li a {
     flex-wrap: wrap;
 }
 
-.banner h2 {
-    font-size: 2.6rem;
-    color: var(--white);
-    font-weight: 500;
-    line-height: 3.5rem;
+.banner .textbox {
+    margin: auto 3rem;
 }
 
-.banner h2 span {
-    font-size: 3rem;
+.banner .textbox p {
+    margin: 15px auto;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--lightgrey);
+    line-height: 0;
+}
+
+.banner .textbox h2 {
+    margin: 15px auto;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--lightgrey);
+}
+
+.banner .textbox h2 span {
+    margin: 0 10px;
+    font-size: 4rem;
     letter-spacing: 1.7px;
     font-weight: 700;
+    background: linear-gradient(45deg, #43e97b, #38f9d7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.banner h3 {
-    color: var(--white);
-    font-size: 2rem;
+.banner .textbox h3 {
+    margin: 10px auto;
+    font-size: 1.8rem;
     font-weight: 500;
+    color: var(--lightwhite);
+    letter-spacing: 1.4px;
+    word-spacing: 6px;
+    text-transform: capitalize;
 }
 
 .banner .textbox .btn {
     position: relative;
-    background: var(--lightblue);
-    display: inline-block;
-    color: var(--white);
+    background: linear-gradient(45deg, #43e97b, #38f9d7);
+    color: var(--lightblack);
     text-decoration: none;
-    padding: 0.4rem 1.3rem;
-    border-radius: 2rem;
-    margin-top: 1rem;
+    padding: 4px 30px;
+    border-radius: 10px;
+    margin: 20px auto;
     outline: none;
-    font-size: 1.5rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    overflow: hidden;
-    transition: 0.5s;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border: 5px double #38f9d7;
+    transition: all 0.3s ease;
 }
 
 .banner .textbox .btn:hover {
-    background: var(--darkblue);
-    font-size: 1.6rem;
+    color: var(--lightwhite);
+    background: var(--lightblack);
 }
 
 .developer {
-    margin-left: 5rem;
+    margin: auto 2rem;
 }
 
-.developer-img {
-    width: 47rem;
+.developer img {
+    max-width: 40rem;
+}
+
+@media (max-width: 1360px) {
+    .developer img {
+        max-width: 30rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .banner .textbox {
+        margin: 3rem 0;
+    }
+
+    .developer {
+        margin: 2rem auto;
+    }
+
+    .developer img {
+        max-width: 26rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .banner .textbox p {
+        font-size: 1.5rem;
+    }
+
+    .banner .textbox h2 {
+        font-size: 2rem;
+    }
+
+    .banner .textbox h2 span {
+        font-size: 3.6rem;
+    }
+
+    .banner .textbox h3 {
+        font-size: 1.4rem;
+    }
+
+    .banner .textbox .btn {
+        padding: 4px 20px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 512px) {
+    .banner .textbox h2 span {
+        margin: 0 10px;
+        font-size: 2.6rem;
+    }
+
+    .developer img {
+        max-width: 20rem;
+    }
 }
 
 .about {
@@ -165,7 +267,7 @@ div.det {
     align-items: center;
 }
 
-.about-image .image{
+.about-image .image {
     height: 20rem;
     width: 20rem;
     border-radius: 50rem;
@@ -175,7 +277,7 @@ div.det {
     margin-left: 5rem;
 }
 
-.contentbox h3{
+.contentbox h3 {
     font-size: 2rem;
 }
 
