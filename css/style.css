@@ -38,6 +38,7 @@ header {
     left: 0;
     top: 0;
     width: 100%;
+    height: 5rem;
     padding: 1.5rem 4rem;
     z-index: 100;
     display: flex;
@@ -239,6 +240,7 @@ header div.toggle ul li a:hover:after {
 .about {
     width: 100%;
     padding: 4%;
+    padding-top: 7rem;
 }
 
 .heading {
