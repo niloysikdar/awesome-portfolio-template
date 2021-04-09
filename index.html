@@ -1,195 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio</title>
+        <link rel="shortcut icon" type="image/png" href="favicon.png" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        />
+        <link rel="stylesheet" href="./css/skills.css" />
+        <link rel="stylesheet" href="./css/projects.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <script
+            defer
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+        ></script>
+        <script defer src="./js/index.js"></script>
+        <script defer src="./js/projects.js"></script>
+    </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./css/skills.css">
-  <link rel="stylesheet" href="./css/projects.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script defer src="./js/index.js"></script>
-  <script defer src="./js/projects.js"></script>
-</head>
-
-<body>
-  <header>
-    <a href="#" class="logo">Portfolio</a>
-    <div class="toggle">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#">Blogs</a></li>
-      </ul>
-    </div>
-  </header>
-  <section class="banner">
-    <div class="textbox">
-      <h2>Hello, I am <br> <span>John Doe</span></h2>
-      <h3>A creative developer</h3>
-      <a href="#" class="btn">Resume</a>
-    </div>
-    <div class="developer">
-      <img src="./assets/images/developer.svg" class="developer-img img-fluid">
-    </div>
-  </section>
-  <section class="about" id="about">
-      <div class="heading col col-12">
-        <h2>About me</h2>
-      </div>
-      <div class="row">
-        <div class="col col-12 col-sm-12 col-md-12 col-lg-4 det">
-            <div class="about-image">
-              <img src="./assets/images/profile.png" alt="Image" class="image">
+    <body>
+        <header>
+            <a href="#" class="logo">Portfolio</a>
+            <div class="toggle">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
             </div>
-        </div>
-        <div class="col col-12 col-sm-12 col-md-12 col-lg-8 det">
-            <h3>A CSE undergrad student</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque minus aliquid dolores libero, commodi eos
-              sapiente autem ad, voluptates praesentium quod, odio voluptatem nesciunt vero itaque? Consequatur ipsa amet
-              deleniti. <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, magnam quisquam numquam,
-              recusandae voluptatem ipsa error earum magni saepe repellendus in adipisci molestias excepturi aperiam,
-              voluptatibus ipsum explicabo inventore perferendis.</p>
-          </div>
-    </div>
-  </section>
-  <!-- <section class="education">
+        </header>
+        <section class="banner">
+            <div class="textbox">
+                <h2>
+                    Hello, I am <br />
+                    <span>John Doe</span>
+                </h2>
+                <h3>A creative developer</h3>
+                <a href="#" class="btn">Resume</a>
+            </div>
+            <div class="developer">
+                <img
+                    src="./assets/images/developer.svg"
+                    class="developer-img img-fluid"
+                />
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="heading col col-12">
+                <h2>About me</h2>
+            </div>
+            <div class="row">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-4 det">
+                    <div class="about-image">
+                        <img
+                            src="./assets/images/profile.png"
+                            alt="Image"
+                            class="image"
+                        />
+                    </div>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-8 det">
+                    <h3>A CSE undergrad student</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Neque minus aliquid dolores libero, commodi eos
+                        sapiente autem ad, voluptates praesentium quod, odio
+                        voluptatem nesciunt vero itaque? Consequatur ipsa amet
+                        deleniti. <br /><br />Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Quam, magnam quisquam
+                        numquam, recusandae voluptatem ipsa error earum magni
+                        saepe repellendus in adipisci molestias excepturi
+                        aperiam, voluptatibus ipsum explicabo inventore
+                        perferendis.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="education">
 
   </section> -->
-  <section class="skills" id="skills">
-    <div class="heading">
-      <h2>Skills</h2>
-    </div>
-    <div class="skill-content">
-      <div class="skills-img">
-        <img src="./assets/images/skills.png" alt="">
-      </div>
-      <div class="skills-field">
-        <li>
-          <h3>Skill 1</h3>
-          <span class="bar">
-            <span class="skill1"></span>
-          </span>
-        </li>
-        <li>
-          <h3>Skill 2</h3>
-          <span class="bar">
-            <span class="skill2"></span>
-          </span>
-        </li>
-        <li>
-          <h3>Skill 3</h3>
-          <span class="bar">
-            <span class="skill3"></span>
-          </span>
-        </li>
-        <li>
-          <h3>Skill 4</h3>
-          <span class="bar">
-            <span class="skill4"></span>
-          </span>
-        </li>
-        <li>
-          <h3>Skill 5</h3>
-          <span class="bar">
-            <span class="skill5"></span>
-          </span>
-        </li>
-        <li>
-          <h3>Skill 6</h3>
-          <span class="bar">
-            <span class="skill6"></span>
-          </span>
-        </li>
-        <li>
-          <h3>Skill 7</h3>
-          <span class="bar">
-            <span class="skill7"></span>
-          </span>
-        </li>
-        <li>
-          <h3>Skill 8</h3>
-          <span class="bar">
-            <span class="skill8"></span>
-          </span>
-        </li>
-      </div>
-    </div>
-  </section>
-  <section class="projects" id="projects">
-    <div class="heading">
-      <h2>Projects</h2>
-    </div>
-    <div class="project-wrapper row">
-      <div class="col-lg-3 col-md-4">
-        <div class="card">
-          <img src="https://picsum.photos/1024/300" alt="">
-          <div class="card-content">
-            <h1 class="card-header">Card 1</h1>
-            <p class="card-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere odit aperiam sunt fuga
-              pariatur ut itaque est reprehenderit blanditiis magni nam, facilis molestiae porro nihil ab vitae, alias
-              earum cum!</p>
-            <button class="card-btn">See More</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4">
-        <div class="card">
-          <img src="https://picsum.photos/501/1024" alt="">
-          <div class="card-content">
-            <h1 class="card-header">Card 2</h1>
-            <p class="card-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere odit aperiam sunt fuga
-              pariatur ut itaque est reprehenderit blanditiis magni nam, facilis molestiae porro nihil ab vitae, alias
-              earum cum!</p>
-            <button class="card-btn">See More</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4">
-        <div class="card">
-          <img src="https://picsum.photos/800/500" alt="">
-          <div class="card-content">
-            <h1 class="card-header">Card 3</h1>
-            <p class="card-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere odit aperiam sunt fuga
-              pariatur ut itaque est reprehenderit blanditiis magni nam, facilis molestiae porro nihil ab vitae, alias
-              earum cum!</p>
-            <button class="card-btn">See More</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4">
-        <div class="card">
-          <img src="https://picsum.photos/400/700" alt="">
-          <div class="card-content">
-            <h1 class="card-header">Card 2</h1>
-            <p class="card-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere odit aperiam sunt fuga
-              pariatur ut itaque est reprehenderit blanditiis magni nam, facilis molestiae porro nihil ab vitae, alias
-              earum cum!</p>
-            <button class="card-btn">See More</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4">
-        <div class="card">
-          <img src="https://picsum.photos/504/300" alt="">
-          <div class="card-content">
-            <h1 class="card-header">Card 3</h1>
-            <p class="card-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere odit aperiam sunt fuga
-              pariatur ut itaque est reprehenderit blanditiis magni nam, facilis molestiae porro nihil ab vitae, alias
-              earum cum!</p>
-            <button class="card-btn">See More</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- <section class="articles">
+        <section class="skills" id="skills">
+            <div class="heading">
+                <h2>Skills</h2>
+            </div>
+            <div class="skill-content">
+                <div class="skills-img">
+                    <img src="./assets/images/skills.png" alt="" />
+                </div>
+                <div class="skills-field">
+                    <li>
+                        <h3>Skill 1</h3>
+                        <span class="bar">
+                            <span class="skill1"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <h3>Skill 2</h3>
+                        <span class="bar">
+                            <span class="skill2"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <h3>Skill 3</h3>
+                        <span class="bar">
+                            <span class="skill3"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <h3>Skill 4</h3>
+                        <span class="bar">
+                            <span class="skill4"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <h3>Skill 5</h3>
+                        <span class="bar">
+                            <span class="skill5"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <h3>Skill 6</h3>
+                        <span class="bar">
+                            <span class="skill6"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <h3>Skill 7</h3>
+                        <span class="bar">
+                            <span class="skill7"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <h3>Skill 8</h3>
+                        <span class="bar">
+                            <span class="skill8"></span>
+                        </span>
+                    </li>
+                </div>
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <div class="heading">
+                <h2>Projects</h2>
+            </div>
+            <div class="project-wrapper row">
+                <div class="col-lg-3 col-md-4">
+                    <div class="card">
+                        <img src="https://picsum.photos/1024/300" alt="" />
+                        <div class="card-content">
+                            <h1 class="card-header">Card 1</h1>
+                            <p class="card-des">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Facere odit aperiam sunt fuga
+                                pariatur ut itaque est reprehenderit blanditiis
+                                magni nam, facilis molestiae porro nihil ab
+                                vitae, alias earum cum!
+                            </p>
+                            <button class="card-btn">See More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="card">
+                        <img src="https://picsum.photos/501/1024" alt="" />
+                        <div class="card-content">
+                            <h1 class="card-header">Card 2</h1>
+                            <p class="card-des">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Facere odit aperiam sunt fuga
+                                pariatur ut itaque est reprehenderit blanditiis
+                                magni nam, facilis molestiae porro nihil ab
+                                vitae, alias earum cum!
+                            </p>
+                            <button class="card-btn">See More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="card">
+                        <img src="https://picsum.photos/800/500" alt="" />
+                        <div class="card-content">
+                            <h1 class="card-header">Card 3</h1>
+                            <p class="card-des">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Facere odit aperiam sunt fuga
+                                pariatur ut itaque est reprehenderit blanditiis
+                                magni nam, facilis molestiae porro nihil ab
+                                vitae, alias earum cum!
+                            </p>
+                            <button class="card-btn">See More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="card">
+                        <img src="https://picsum.photos/400/700" alt="" />
+                        <div class="card-content">
+                            <h1 class="card-header">Card 2</h1>
+                            <p class="card-des">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Facere odit aperiam sunt fuga
+                                pariatur ut itaque est reprehenderit blanditiis
+                                magni nam, facilis molestiae porro nihil ab
+                                vitae, alias earum cum!
+                            </p>
+                            <button class="card-btn">See More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="card">
+                        <img src="https://picsum.photos/504/300" alt="" />
+                        <div class="card-content">
+                            <h1 class="card-header">Card 3</h1>
+                            <p class="card-des">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Facere odit aperiam sunt fuga
+                                pariatur ut itaque est reprehenderit blanditiis
+                                magni nam, facilis molestiae porro nihil ab
+                                vitae, alias earum cum!
+                            </p>
+                            <button class="card-btn">See More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="articles">
 
   </section> -->
-</body>
-
+    </body>
 </html>
