@@ -53,6 +53,10 @@ header.padding {
     box-shadow: 0 6px 16px rgb(10, 10, 24, 0.3);
 }
 
+header a svg {
+    display: none;
+}
+
 header a.logo {
     text-decoration: none;
     color: var(--white);
@@ -224,6 +228,46 @@ header div.toggle ul li a:hover:after {
         font-size: 1.2rem;
     }
 }
+
+@media (max-width: 950px) {
+    .home {
+        fill: white;
+        display: block;
+    }
+    header a.logo {
+        display: none;
+    }
+}
+
+
+@media (max-width: 800px) {
+    header {
+        justify-content: space-between;
+        padding: 1.75rem;
+    }
+    header div.toggle ul li a {
+        margin: auto 1rem;
+    }
+}
+
+@media (max-width: 700px) {
+    header {
+        justify-content: space-between;
+        padding: 1.5rem;
+    }
+    header div.toggle ul li a {
+    margin: auto 1rem;
+}
+
+}
+
+@media (max-width: 650px) {
+    header div.toggle ul li a {
+        margin: auto .5rem;
+    }
+}
+
+
 
 @media (max-width: 512px) {
     .banner .textbox h2 span {
