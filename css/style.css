@@ -39,7 +39,7 @@ p {
     margin: 0px;
 }
 
-header, header.padding {
+header {
     position: fixed;
     left: 0;
     top: 0;
@@ -112,6 +112,72 @@ header div.toggle ul li a:hover {
 }
 header div.toggle ul li a:hover:after {
     transform: scale(1, 1);
+}
+
+header div.menu-icon {
+    position: relative;
+    width: 55px;
+    height: 55px;
+    background: none;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header div.menu-icon .menu-inner {
+    position: absolute;
+    width: 70%;
+    height: 4px;
+    background: var(--lightwhite);
+    border-radius: 4px;
+}
+
+header div.menu-icon .menu-inner:before,
+header div.menu-icon .menu-inner:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--lightwhite);
+    border-radius: 4px;
+}
+
+header div.menu-icon .menu-inner:before {
+    top: -11px;
+}
+header div.menu-icon .menu-inner:after {
+    top: 11px;
+}
+
+/* Animation */
+
+header div.menu-icon .menu-inner,
+header div.menu-icon .menu-inner:before,
+header div.menu-icon .menu-inner:after {
+    transition: transform, top, opacity, cubic-bezier(0.5, 0.1, 0.6, 0.2) 0.2s;
+}
+
+header div.menu-icon.menu-active .menu-inner {
+    transition-delay: 0.1s;
+    transition-timing-function: cubic-bezier(0.2, 0.6, 0.3, 1);
+    transform: rotate(225deg);
+}
+
+header div.menu-icon.menu-active .menu-inner:before {
+    top: 0;
+    opacity: 0;
+    transition: top, opacity, 0.1s ease-out;
+}
+
+header div.menu-icon.menu-active .menu-inner:after {
+    top: 0;
+    transform: rotate(-90deg);
+    transition: top 0.1s ease-out,
+        transform 0.2s cubic-bezier(0.2, 0.6, 0.3, 1) 0.1s;
 }
 
 .banner {
@@ -245,7 +311,6 @@ header div.toggle ul li a:hover:after {
     }
 }
 
-
 @media (max-width: 800px) {
     header {
         justify-content: space-between;
@@ -262,18 +327,27 @@ header div.toggle ul li a:hover:after {
         padding: 1.5rem;
     }
     header div.toggle ul li a {
-    margin: auto 1rem;
-}
-
+        margin: auto 1rem;
+    }
 }
 
 @media (max-width: 650px) {
     header div.toggle ul li a {
-        margin: auto .5rem;
+        margin: auto 0.5rem;
     }
 }
 
+@media (max-width: 640px) {
+    header div.toggle {
+        display: none;
+    }
+}
 
+@media (min-width: 640px) {
+    header div.menu-icon {
+        display: none;
+    }
+}
 
 @media (max-width: 512px) {
     .banner .textbox h2 span {
