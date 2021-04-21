@@ -1,140 +1,114 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-    --lightblack : #111122;
-    --lightblue : #1b83d8;
-    --white : #ffffff;
-    --darkblue : #104c7e;
+  --lightblack: #111122;
+  --lightblue: #1b83d8;
+  --lightgrey: rgb(220, 220, 220);
+  --white: #ffffff;
+  --darkblue: #104c7e;
 }
 
 .skills {
-    width: 100%;
-    background: var(--lightblack);
-    color: var(--white);
-    margin-top: 5rem;
-    padding: 3rem 5rem;
-    padding-top: 7rem;
+  width: 100%;
+  background: var(--lightblack);
+  color: var(--white);
+  margin-top: 5rem;
+  padding: 3rem 5rem;
+  padding-top: 7rem;
 }
 
 .skill-content {
-    display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 120px;
+  padding: 80px 0;
 }
 
-.skills-img {
-    width: 38%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.skill-img-container {
+  width: 140px;
+}
+
+.skill-img-container path {
+  fill: red;
+}
+
+.skill-title {
+  text-align: center;
+  margin-top: 30px;
+  color: var(--lightgrey);
+  font-weight: 300;
 }
 
 .skills-img img {
-    width: 100%;
-    border-radius: 20px;
+  width: 100%;
+  border-radius: 20px;
 }
 
 .skills-field {
-    width: 60%;
-    margin-left: 5rem;
+  width: 60%;
+  margin-left: 5rem;
 }
 
 .skills-field li {
-    margin:  20px 0;
-    list-style: none;
+  margin: 20px 0;
+  list-style: none;
 }
 
 .skills-field h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .bar {
-    background: #353b48;
-    display: block;
-    height: 10px;
-    border:  1px solid rgba(0, 0, 0, 0.3);
-    border-radius: 3px;
-    overflow: hidden;
-    box-shadow: 0 0 10px var(--darkblue);
+  background: #353b48;
+  display: block;
+  height: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 0 10px var(--darkblue);
 }
 
 .bar span {
-    height: 10px;
-    float: left;
-    background: var(--lightblue);
-}
-
-.skill1 {
-    width: 80%;
-    animation: percent80 2s;
-}
-
-.skill2 {
-    width: 80%;
-    animation: percent80 2s;
-}
-
-.skill3 {
-    width: 70%;
-    animation: percent70 2s;
-}
-
-.skill4 {
-    width: 80%;
-    animation: percent80 2s;
-}
-
-.skill5 {
-    width: 60%;
-    animation: percent60 2s;
-}
-
-.skill6 {
-    width: 70%;
-    animation: percent70 2s;
-}
-
-.skill7 {
-    width: 90%;
-    animation: percent90 2s;
-}
-
-.skill8 {
-    width: 60%;
-    animation: percent60 2s;
+  height: 10px;
+  float: left;
+  background: var(--lightblue);
 }
 
 @keyframes percent60 {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 60%;
-    }
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
 }
 
 @keyframes percent70 {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 70%;
-    }
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
 }
 
 @keyframes percent80 {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 80%;
-    }
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
 }
 
 @keyframes percent90 {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 90%;
-    }
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
 }
