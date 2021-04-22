@@ -1,3 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+    --lightblack: #111122;
+    --lightblue: #1b83d8;
+    --white: #ffffff;
+    --lightwhite: #f1f6f9;
+    --lightgrey: #9ba4b4;
+    --darkblue: #104c7e;
+}
+
+.about {
+    width: 100%;
+    padding: 4%;
+    padding-top: 7rem;
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+.heading h2 {
+    font-size: 4rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+div.det {
+    margin-bottom: 15px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.about-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image .image {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50rem;
+}
+
+.contentbox {
+    margin-left: 5rem;
+}
+
+.contentbox h3 {
+    font-size: 2rem;
+}
+
+.contentbox p {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
 .about-subtitle {
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }

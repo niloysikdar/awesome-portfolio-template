@@ -14,15 +14,17 @@
     padding: 7rem 4rem 2rem;
 }
 
-.projects .heading h2 {
+.projects h2.projects_heading {
     position: relative;
     font-size: 3rem;
     font-weight: 700;
     color: var(--darkgrey);
+    text-align: center;
+    letter-spacing: 1px;
 }
 
 .projects .project-wrapper {
-    margin: 1.5rem auto;
+    margin: 3rem auto;
 }
 
 .projects .project-wrapper .cards-container {
@@ -136,7 +138,6 @@
     opacity: 0.8;
     transform: translateY(0);
 }
-
 
 @media (max-width: 512px) {
     .projects {
