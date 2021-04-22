@@ -1,14 +1,10 @@
-:root {
-    --lightblack: #111122;
-    --lightblue: #1b83d8;
-    --white: #ffffff;
-    --lightwhite: #f1f6f9;
-    --darkblue: #104c7e;
-    --darkgrey: #393e46;
-    --lightgrey: #9ba4b4;
-    --lightyellow: #fddb3a;
-    --lightpink: #ff005c;
-}
+/* Main Font in (style.css) */
+/* If required new font add here! */
+
+/* All Custom Colors in (style.css) || [:root] || */
+/* Add / Change if required! */
+
+/* Footer Section Styles Start */
 
 footer .footer-container {
     padding: 3rem 1rem;

@@ -1,14 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+/* Main Font in (style.css) */
+/* If required new font add here! */
 
-:root {
-    --lightblack: #111122;
-    --lightblue: #1b83d8;
-    --white: #ffffff;
-    --lightwhite: #f1f6f9;
-    --darkblue: #104c7e;
-    --darkgrey: #393e46;
-    --lightgrey: #9ba4b4;
-}
+/* All Custom Colors in (style.css) || [:root] || */
+/* Add / Change if required! */
+
+/* Projects Section Styles Start */
 
 .projects {
     padding: 7rem 4rem 2rem;
