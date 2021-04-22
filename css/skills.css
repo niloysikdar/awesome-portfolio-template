@@ -1,140 +1,90 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+/* Main Font in (style.css) */
+/* If required new font add here! */
 
-:root {
-    --lightblack : #111122;
-    --lightblue : #1b83d8;
-    --white : #ffffff;
-    --darkblue : #104c7e;
+/* All Custom Colors in (style.css) || [:root] || */
+/* Add / Change if required! */
+
+/* Skills Section Styles Start */
+
+/* Scroll Animation Toggle */
+
+
+.slide-in {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 3s ease;
 }
+
+.slide-in.active {
+    opacity: 1;
+    transform: translateX(0%) scale(1);
+}
+
+/* Skills Custom Styles */
 
 .skills {
     width: 100%;
     background: var(--lightblack);
-    color: var(--white);
-    margin-top: 5rem;
-    padding: 3rem 5rem;
-    padding-top: 7rem;
+    padding: 7rem 2rem 3rem;
 }
 
-.skill-content {
-    display: flex;
+.skills h2.skills_heading {
+    position: relative;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #f1f6f9;
+    text-align: center;
+    letter-spacing: 1px;
 }
 
-.skills-img {
-    width: 38%;
+.skills .skill-content {
+    padding: 80px 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-.skills-img img {
-    width: 100%;
-    border-radius: 20px;
+.skills .skill-content .skill {
+    margin: 40px 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.skills-field {
-    width: 60%;
-    margin-left: 5rem;
+.skills .skill-content .skill .skill-img-container {
+    width: 70px;
 }
 
-.skills-field li {
-    margin:  20px 0;
-    list-style: none;
+.skills .skill-content .skill h3.skill-title {
+    margin: 30px 10px 20px;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--mediumgrey);
 }
 
-.skills-field h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
+/* Skills Icons Colors */
 
-.bar {
-    background: #353b48;
-    display: block;
-    height: 10px;
-    border:  1px solid rgba(0, 0, 0, 0.3);
-    border-radius: 3px;
-    overflow: hidden;
-    box-shadow: 0 0 10px var(--darkblue);
+#html_icon path {
+    fill: #f06529;
 }
-
-.bar span {
-    height: 10px;
-    float: left;
-    background: var(--lightblue);
+#css_icon path {
+    fill: #2965f1;
 }
-
-.skill1 {
-    width: 80%;
-    animation: percent80 2s;
+#javascript_icon path {
+    fill: #f0db4f;
 }
-
-.skill2 {
-    width: 80%;
-    animation: percent80 2s;
+#nodejs_icon path {
+    fill: #6cc24a;
 }
-
-.skill3 {
-    width: 70%;
-    animation: percent70 2s;
+#mongodb_icon path {
+    fill: #589636;
 }
-
-.skill4 {
-    width: 80%;
-    animation: percent80 2s;
+#express_icon path {
+    fill: #7fffd4;
 }
-
-.skill5 {
-    width: 60%;
-    animation: percent60 2s;
-}
-
-.skill6 {
-    width: 70%;
-    animation: percent70 2s;
-}
-
-.skill7 {
-    width: 90%;
-    animation: percent90 2s;
-}
-
-.skill8 {
-    width: 60%;
-    animation: percent60 2s;
-}
-
-@keyframes percent60 {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 60%;
-    }
-}
-
-@keyframes percent70 {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 70%;
-    }
-}
-
-@keyframes percent80 {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 80%;
-    }
-}
-
-@keyframes percent90 {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 90%;
-    }
+#reactjs_icon path {
+    fill: #00d8ff;
 }

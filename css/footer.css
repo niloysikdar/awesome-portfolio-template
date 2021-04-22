@@ -1,0 +1,87 @@
+/* Main Font in (style.css) */
+/* If required new font add here! */
+
+/* All Custom Colors in (style.css) || [:root] || */
+/* Add / Change if required! */
+
+/* Footer Section Styles Start */
+
+footer .footer-container {
+    padding: 3rem 1rem;
+    background: var(--lightblack);
+}
+
+footer .footer-container .upper-footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer .footer-container .upper-footer .social-contact,
+footer .footer-container .upper-footer .address-contact {
+    margin: 2rem 5rem;
+}
+
+footer .footer-container .upper-footer .social-contact h2,
+footer .footer-container .upper-footer .address-contact h2 {
+    position: relative;
+    margin: 20px 0;
+    font-size: 26px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: var(--lightwhite);
+}
+
+footer .footer-container .upper-footer .social-contact h2:after,
+footer .footer-container .upper-footer .address-contact h2:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transform: translate(0, -50%);
+    width: 20%;
+    height: 4px;
+    background: var(--lightpink);
+    border-radius: 4px;
+}
+
+footer .footer-container .upper-footer .social-contact p,
+footer .footer-container .upper-footer .address-contact p {
+    margin: 30px 0 20px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    color: var(--lightgrey);
+}
+
+footer .footer-container .upper-footer .social-contact .list-group,
+footer .footer-container .upper-footer .address-contact .list-group {
+    flex-wrap: wrap;
+}
+
+footer .footer-container .upper-footer .social-contact a,
+footer .footer-container .upper-footer .address-contact a {
+    margin: 10px;
+    background: var(--lightblack);
+    color: var(--lightwhite);
+    box-shadow: 0 3px 8px #747b88;
+    border-radius: 50%;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s ease;
+}
+
+footer .footer-container .upper-footer .social-contact a i,
+footer .footer-container .upper-footer .address-contact a i {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer .footer-container .upper-footer .social-contact a:hover,
+footer .footer-container .upper-footer .address-contact a:hover {
+    color: var(--lightgrey);
+}

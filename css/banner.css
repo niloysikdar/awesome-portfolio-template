@@ -1,0 +1,139 @@
+/* Main Font in (style.css) */
+/* If required new font add here! */
+
+/* All Custom Colors in (style.css) || [:root] || */
+/* Add / Change if required! */
+
+/* Banner Section Styles Start */
+
+.banner {
+    position: relative;
+    min-height: 100vh;
+    background: var(--lightblack);
+    padding: 5rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.banner .textbox {
+    margin: auto 3rem;
+}
+
+.banner .textbox p {
+    margin: 15px auto;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--lightgrey);
+    line-height: 0;
+}
+
+.banner .textbox h2 {
+    margin: 15px auto;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--lightgrey);
+}
+
+.banner .textbox h2 span {
+    margin: 0 10px;
+    font-size: 4rem;
+    letter-spacing: 1.7px;
+    font-weight: 700;
+    background: linear-gradient(45deg, #43e97b, #38f9d7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner .textbox h3 {
+    margin: 10px auto;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--lightwhite);
+    letter-spacing: 1.4px;
+    word-spacing: 6px;
+    text-transform: capitalize;
+}
+
+.banner .textbox .btn {
+    position: relative;
+    background: linear-gradient(45deg, #43e97b, #38f9d7);
+    color: var(--lightblack);
+    text-decoration: none;
+    padding: 4px 30px;
+    border-radius: 10px;
+    margin: 20px auto;
+    outline: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border: 5px double #38f9d7;
+    transition: all 0.3s ease;
+}
+
+.banner .textbox .btn:hover {
+    color: var(--lightwhite);
+    background: var(--lightblack);
+}
+
+.developer {
+    margin: auto 2rem;
+}
+
+.developer img {
+    max-width: 40rem;
+}
+
+@media (max-width: 1360px) {
+    .developer img {
+        max-width: 30rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .banner .textbox {
+        margin: 3rem 0;
+    }
+
+    .developer {
+        margin: 2rem auto;
+    }
+
+    .developer img {
+        max-width: 26rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .banner .textbox p {
+        font-size: 1.5rem;
+    }
+
+    .banner .textbox h2 {
+        font-size: 2rem;
+    }
+
+    .banner .textbox h2 span {
+        font-size: 3.6rem;
+    }
+
+    .banner .textbox h3 {
+        font-size: 1.4rem;
+    }
+
+    .banner .textbox .btn {
+        padding: 4px 20px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 512px) {
+    .banner .textbox h2 span {
+        margin: 0 10px;
+        font-size: 2.6rem;
+    }
+
+    .developer img {
+        max-width: 20rem;
+    }
+}
