@@ -19,6 +19,7 @@ body {
 /* All Colors Variables (Add / Change Here) */
 
 :root {
+    --darkblack: #222831;
     --lightblack: #111122;
 
     --lightblue: #0075f6;
