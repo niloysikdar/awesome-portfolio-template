@@ -10,10 +10,20 @@
 
 /* Scroll Animation Toggle */
 
+
 .slide-in {
     opacity: 0;
     transform: scale(0.8);
     transition: all 3s ease;
+
+.skill-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 80px;
+  padding: 80px 0;
+
 }
 
 .slide-in.active {
