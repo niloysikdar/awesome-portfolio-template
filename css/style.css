@@ -1,24 +1,8 @@
+/* Main Fonts */
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
-:root {
-    --lightblack: #111122;
-    --lightblue: #1b83d8;
-    --white: #ffffff;
-    --lightwhite: #f1f6f9;
-    --lightgrey: #9ba4b4;
-    --darkblue: #104c7e;
-    --lightyellow: #fddb3a;
-}
-
-::-webkit-scrollbar {
-    width: 6px;
-    height: 6px;
-    background: transparent;
-}
-::-webkit-scrollbar-thumb {
-    background: var(--lightblue);
-    border-radius: 4px;
-}
+/* Site General Settings */
 
 * {
     margin: 0;
@@ -30,4 +14,35 @@
 body {
     background: var(--lightwhite);
     font-family: "Poppins", sans-serif;
+}
+
+/* All Colors Variables (Add / Change Here) */
+
+:root {
+    --lightblack: #111122;
+
+    --lightblue: #0075f6;
+    --darkblue: #104c7e;
+
+    --white: #ffffff;
+    --lightwhite: #f1f6f9;
+
+    --lightgrey: #9ba4b4;
+    --mediumgrey: #dcdcdc;
+    --darkgrey: #393e46;
+
+    --lightyellow: #fddb3a;
+    --lightpink: #ff005c;
+}
+
+/* Custom Scroll Bar */
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--lightblue);
+    border-radius: 4px;
 }

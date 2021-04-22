@@ -1,14 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+/* Main Font in (style.css) */
+/* If required new font add here! */
 
-:root {
-    --lightblack: #111122;
-    --lightblue: #1b83d8;
-    --white: #ffffff;
-    --lightwhite: #f1f6f9;
-    --lightgrey: #9ba4b4;
-    --darkblue: #104c7e;
-    --lightyellow: #fddb3a;
-}
+/* All Custom Colors in (style.css) || [:root] || */
+/* Add / Change if required! */
+
+/* Banner Section Styles Start */
 
 .banner {
     position: relative;

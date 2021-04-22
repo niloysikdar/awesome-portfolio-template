@@ -1,12 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+/* Main Font in (style.css) */
+/* If required new font add here! */
 
-:root {
-    --lightblack: #111122;
-    --lightblue: #1b83d8;
-    --lightgrey: rgb(220, 220, 220);
-    --white: #ffffff;
-    --darkblue: #104c7e;
-}
+/* All Custom Colors in (style.css) || [:root] || */
+/* Add / Change if required! */
+
+/* Skills Section Styles Start */
 
 /* Scroll Animation Toggle */
 
@@ -59,10 +57,11 @@
 }
 
 .skills .skill-content .skill h3.skill-title {
-    text-align: center;
     margin: 30px 10px 20px;
-    color: var(--lightgrey);
-    font-weight: 300;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--mediumgrey);
 }
 
 /* Skills Icons Colors */
