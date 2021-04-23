@@ -28,11 +28,13 @@ header.padding {
     box-shadow: 0 6px 16px rgb(10, 10, 24, 0.3);
 }
 
-header a svg {
+/* Navbar Logo */
+
+header div.navbar-logo a svg {
     display: none;
 }
 
-header a.logo {
+header div.navbar-logo a.logo {
     text-decoration: none;
     color: var(--white);
     font-size: 2.4rem;
@@ -41,47 +43,7 @@ header a.logo {
     letter-spacing: 1.5px;
 }
 
-header div.toggle ul {
-    position: relative;
-    display: flex;
-}
-
-header div.toggle ul li {
-    list-style: none;
-    margin: 1rem 0 0;
-}
-
-header div.toggle ul li a {
-    position: relative;
-    text-decoration: none;
-    color: var(--white);
-    margin: auto 1.5rem;
-    font-size: 1.2rem;
-    font-weight: 500;
-    letter-spacing: 1.4px;
-    transition: all 0.3s ease;
-}
-
-header div.toggle ul li a:after {
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background: var(--lightyellow);
-    border-radius: 2px;
-    transform: scale(0, 1);
-    transform-origin: 50% 50%;
-    transition: transform 0.3s ease;
-}
-
-header div.toggle ul li a:hover {
-    color: rgba(255, 255, 255, 0.6);
-}
-header div.toggle ul li a:hover:after {
-    transform: scale(1, 1);
-}
+/* Navbar Hamburger Menu */
 
 header div.menu-icon {
     position: relative;
@@ -96,7 +58,7 @@ header div.menu-icon {
     align-items: center;
 }
 
-header div.menu-icon .menu-inner {
+header div.menu-icon span.menu-inner {
     position: absolute;
     width: 70%;
     height: 4px;
@@ -104,8 +66,8 @@ header div.menu-icon .menu-inner {
     border-radius: 4px;
 }
 
-header div.menu-icon .menu-inner:before,
-header div.menu-icon .menu-inner:after {
+header div.menu-icon span.menu-inner:before,
+header div.menu-icon span.menu-inner:after {
     content: "";
     position: absolute;
     left: 0;
@@ -115,47 +77,139 @@ header div.menu-icon .menu-inner:after {
     border-radius: 4px;
 }
 
-header div.menu-icon .menu-inner:before {
+header div.menu-icon span.menu-inner:before {
     top: -11px;
 }
-header div.menu-icon .menu-inner:after {
+header div.menu-icon span.menu-inner:after {
     top: 11px;
 }
 
-/* Animation */
+/* Navbar Hamburger Menu Animation */
 
-header div.menu-icon .menu-inner,
-header div.menu-icon .menu-inner:before,
-header div.menu-icon .menu-inner:after {
+header div.menu-icon span.menu-inner,
+header div.menu-icon span.menu-inner:before,
+header div.menu-icon span.menu-inner:after {
     transition: transform, top, opacity, cubic-bezier(0.5, 0.1, 0.6, 0.2) 0.2s;
 }
 
-header div.menu-icon.menu-active .menu-inner {
+header div.menu-icon.menu-active span.menu-inner {
     transition-delay: 0.1s;
     transition-timing-function: cubic-bezier(0.2, 0.6, 0.3, 1);
     transform: rotate(225deg);
 }
 
-header div.menu-icon.menu-active .menu-inner:before {
+header div.menu-icon.menu-active span.menu-inner:before {
     top: 0;
     opacity: 0;
     transition: top, opacity, 0.1s ease-out;
 }
 
-header div.menu-icon.menu-active .menu-inner:after {
+header div.menu-icon.menu-active span.menu-inner:after {
     top: 0;
     transform: rotate(-90deg);
     transition: top 0.1s ease-out,
         transform 0.2s cubic-bezier(0.2, 0.6, 0.3, 1) 0.1s;
 }
 
+/* Desktop Navbar */
+
+header div.desktop_nav ul {
+    position: relative;
+    display: flex;
+}
+
+header div.desktop_nav ul li {
+    list-style: none;
+    margin: 1rem 0 0;
+}
+
+header div.desktop_nav ul li a {
+    position: relative;
+    text-decoration: none;
+    color: var(--white);
+    margin: auto 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1.4px;
+    transition: all 0.3s ease;
+}
+
+header div.desktop_nav ul li a:after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--lightyellow);
+    border-radius: 2px;
+    transform: scale(0, 1);
+    transform-origin: 50% 50%;
+    transition: transform 0.3s ease;
+}
+
+header div.desktop_nav ul li a:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+header div.desktop_nav ul li a:hover:after {
+    transform: scale(1, 1);
+}
+
+/* Mobile Navbar */
+
+header div.mobile_nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    width: 100%;
+    padding: 4rem 4rem 1rem;
+    z-index: -1;
+    background: var(--lightblack);
+    box-shadow: 0 2px 6px rgba(4, 4, 15, 0.6);
+    transition: all 0.5s ease;
+}
+
+header div.mobile_nav.menu-active {
+    transform: translateY(0);
+}
+
+header div.mobile_nav ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header div.mobile_nav ul li {
+    list-style: none;
+    margin: 1rem auto 0.5rem;
+}
+
+header div.mobile_nav ul li a {
+    position: relative;
+    text-decoration: none;
+    color: var(--lightwhite);
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+header div.mobile_nav ul li a:hover {
+    color: var(--lightgrey);
+}
+
+/* Navbar Responsive Media */
+
 @media (max-width: 950px) {
-    .home {
+    header div.navbar-logo a svg.home {
         fill: white;
         display: block;
     }
 
-    header a.logo {
+    header div.navbar-logo a.logo {
         display: none;
     }
 }
@@ -166,7 +220,7 @@ header div.menu-icon.menu-active .menu-inner:after {
         padding: 1.75rem;
     }
 
-    header div.toggle ul li a {
+    header div.desktop_nav ul li a {
         margin: auto 1rem;
     }
 }
@@ -177,25 +231,33 @@ header div.menu-icon.menu-active .menu-inner:after {
         padding: 1.5rem;
     }
 
-    header div.toggle ul li a {
+    header div.desktop_nav ul li a {
         margin: auto 1rem;
     }
 }
 
-@media (max-width: 650px) {
-    header div.toggle ul li a {
+@media (max-width: 668px) {
+    header div.desktop_nav ul li a {
         margin: auto 0.5rem;
     }
 }
 
 @media (max-width: 640px) {
-    header div.toggle {
+    header div.desktop_nav {
         display: none;
+    }
+
+    header.padding {
+        padding: 0.8rem 2rem;
     }
 }
 
 @media (min-width: 640px) {
     header div.menu-icon {
+        display: none;
+    }
+
+    header div.mobile_nav {
         display: none;
     }
 }

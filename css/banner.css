@@ -6,7 +6,7 @@
 
 /* Banner Section Styles Start */
 
-.banner {
+section.banner {
     position: relative;
     min-height: 100vh;
     background: var(--lightblack);
@@ -17,11 +17,11 @@
     flex-wrap: wrap;
 }
 
-.banner .textbox {
+section.banner .developer-bio {
     margin: auto 3rem;
 }
 
-.banner .textbox p {
+section.banner .developer-bio p {
     margin: 15px auto;
     font-size: 1.8rem;
     font-weight: 500;
@@ -29,14 +29,14 @@
     line-height: 0;
 }
 
-.banner .textbox h2 {
+section.banner .developer-bio h2 {
     margin: 15px auto;
     font-size: 2.2rem;
     font-weight: 600;
     color: var(--lightgrey);
 }
 
-.banner .textbox h2 span {
+section.banner .developer-bio h2 span {
     margin: 0 10px;
     font-size: 4rem;
     letter-spacing: 1.7px;
@@ -46,7 +46,7 @@
     -webkit-text-fill-color: transparent;
 }
 
-.banner .textbox h3 {
+section.banner .developer-bio h3 {
     margin: 10px auto;
     font-size: 1.8rem;
     font-weight: 500;
@@ -56,7 +56,7 @@
     text-transform: capitalize;
 }
 
-.banner .textbox .btn {
+section.banner .developer-bio .btn {
     position: relative;
     background: linear-gradient(45deg, #43e97b, #38f9d7);
     color: var(--lightblack);
@@ -71,69 +71,90 @@
     transition: all 0.3s ease;
 }
 
-.banner .textbox .btn:hover {
+section.banner .developer-bio .btn:hover {
     color: var(--lightwhite);
     background: var(--lightblack);
 }
 
-.developer {
+section.banner .developer-img {
     margin: auto 2rem;
 }
 
-.developer img {
+section.banner .developer-img img {
     max-width: 40rem;
 }
 
 @media (max-width: 1360px) {
-    .developer img {
+    section.banner .developer-img img {
         max-width: 30rem;
     }
 }
 
 @media (max-width: 1200px) {
-    .banner .textbox {
+    section.banner .developer-bio {
         margin: 3rem 0;
     }
 
-    .developer {
+    section.banner .developer-img {
         margin: 2rem auto;
     }
 
-    .developer img {
+    section.banner .developer-img img {
         max-width: 26rem;
     }
 }
 
 @media (max-width: 992px) {
-    .banner .textbox p {
+    section.banner .developer-bio p {
         font-size: 1.5rem;
     }
 
-    .banner .textbox h2 {
+    section.banner .developer-bio h2 {
         font-size: 2rem;
     }
 
-    .banner .textbox h2 span {
+    section.banner .developer-bio h2 span {
         font-size: 3.6rem;
     }
 
-    .banner .textbox h3 {
+    section.banner .developer-bio h3 {
         font-size: 1.4rem;
     }
 
-    .banner .textbox .btn {
+    section.banner .developer-bio .btn {
         padding: 4px 20px;
         font-size: 1.2rem;
     }
 }
 
+@media (max-width: 940px) {
+    section.banner .developer-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 @media (max-width: 512px) {
-    .banner .textbox h2 span {
+    section.banner .developer-bio h2 span {
         margin: 0 10px;
         font-size: 2.6rem;
     }
 
-    .developer img {
+    section.banner .developer-img img {
         max-width: 20rem;
+    }
+}
+
+@media (max-width: 340px) {
+    section.banner .developer-img img {
+        max-width: 16rem;
+    }
+}
+
+@media (max-width: 250px) {
+    section.banner .developer-img img {
+        max-width: 10rem;
     }
 }

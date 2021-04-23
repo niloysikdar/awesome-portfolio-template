@@ -1,7 +1,7 @@
 $(window).scroll(function () {
-    $('header').toggleClass('padding', window.scrollY > 100);
+    $("header").toggleClass("padding", window.scrollY > 100);
 });
 
-$(".menu-icon").click(function () {
-    $(".menu-icon").toggleClass("menu-active");
+$(".menu-icon,.mobile_nav ul li a").click(function () {
+    $(".menu-icon,.mobile_nav").toggleClass("menu-active");
 });
