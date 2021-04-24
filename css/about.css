@@ -8,8 +8,7 @@
 
 .about {
     width: 100%;
-    margin: 4rem auto;
-    padding: 2rem 4rem;
+    padding: 7rem 2rem 4rem;
 }
 
 .about_heading {
@@ -72,6 +71,7 @@
 @media (max-width: 1120px) {
     .about {
         padding: 2rem 0;
+        padding-top: 7rem;
     }
 
     .about .about-content {
@@ -100,6 +100,7 @@
 @media (max-width: 768px) {
     .about {
         padding: 2rem 1rem;
+        padding-top: 7rem;
     }
 
     .about .about-content .about-image {
