@@ -16,3 +16,9 @@ $(window).scroll(function () {
 $(".menu-icon,.mobile_nav ul li a").click(function () {
     $(".menu-icon,.mobile_nav").toggleClass("menu-active");
 });
+
+AOS.init({
+    duration: 1500,
+    easing: "ease",
+    once: false,
+});
