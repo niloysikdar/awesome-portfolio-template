@@ -1,49 +1,52 @@
 /* Main Fonts */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 /* Site General Settings */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-    background: var(--lightwhite);
-    font-family: "Poppins", sans-serif;
+  background: var(--lightwhite);
+  font-family: 'Poppins', sans-serif;
 }
 
 /* All Colors Variables (Add / Change Here) */
 
 :root {
-    --darkblack: #222831;
-    --lightblack: #111122;
+  --darkblack: #222831;
+  --lightblack: #111122;
 
-    --lightblue: #0075f6;
-    --darkblue: #104c7e;
+  --lightblue: #0075f6;
+  --darkblue: #104c7e;
 
-    --white: #ffffff;
-    --lightwhite: #f1f6f9;
+  --white: #ffffff;
+  --lightwhite: #f1f6f9;
 
-    --lightgrey: #9ba4b4;
-    --mediumgrey: #dcdcdc;
-    --darkgrey: #393e46;
+  --offwhite: #f0f0f0;
+  --lightgrey: #9ba4b4;
+  --mediumgrey: #dcdcdc;
+  --darkgrey: #393e46;
 
-    --lightyellow: #fddb3a;
-    --lightpink: #ff005c;
+  --lightyellow: #fddb3a;
+  --lightpink: #ff005c;
+
+  --fontSizeH2: 3rem;
 }
 
 /* Custom Scroll Bar */
 
 ::-webkit-scrollbar {
-    width: 6px;
-    height: 6px;
-    background: transparent;
+  width: 6px;
+  height: 6px;
+  background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-    background: var(--lightblue);
-    border-radius: 4px;
+  background: var(--lightblue);
+  border-radius: 4px;
 }
