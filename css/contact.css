@@ -1,0 +1,21 @@
+/* Main Font in (style.css) */
+/* If required new font add here! */
+
+/* All Custom Colors in (style.css) || [:root] || */
+/* Add / Change if required! */
+
+/* Contact Section Styles Start */
+
+.contact {
+    margin: 2rem auto;
+    padding: 3rem 2rem;
+}
+
+.contact h2.contact_heading {
+    position: relative;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--darkblack);
+    text-align: center;
+    letter-spacing: 1px;
+}
