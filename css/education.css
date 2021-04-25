@@ -25,9 +25,13 @@
 }
 .education-institution {
   font-weight: 600;
+  background: -webkit-linear-gradient(45deg, var(--lightpink), #c80049);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .education-career {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin-bottom: 1.4rem;
   display: inline-block;
   position: relative;
@@ -39,7 +43,8 @@
   height: 4px;
   bottom: -10px;
   left: 0;
-  background: var(--lightpink);
+  border-radius: 4px;
+  background: -webkit-linear-gradient(45deg, var(--lightpink), #c80049);
 }
 .education-years {
   font-size: 1rem;
@@ -47,4 +52,7 @@
 }
 .education-description {
   color: var(--darkgrey);
+}
+.fa-graduation-cap {
+  color: var(--lightgrey);
 }
