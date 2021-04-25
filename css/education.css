@@ -1,0 +1,58 @@
+.education {
+  background: var(--offwhite);
+  padding-top: 5rem;
+}
+.education-heading {
+  font-size: var(--fontSizeH2);
+  font-weight: 700;
+  text-align: center;
+}
+.education-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 100px;
+  padding: 100px;
+}
+.education-item {
+  display: flex;
+  gap: 20px;
+  max-width: 43%;
+}
+.education-icon {
+  font-size: 2rem;
+}
+.education-institution {
+  font-weight: 600;
+  background: -webkit-linear-gradient(45deg, var(--lightpink), #c80049);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.education-career {
+  font-size: 1.2rem;
+  margin-bottom: 1.4rem;
+  display: inline-block;
+  position: relative;
+}
+.education-career::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 4px;
+  bottom: -10px;
+  left: 0;
+  border-radius: 4px;
+  background: -webkit-linear-gradient(45deg, var(--lightpink), #c80049);
+}
+.education-years {
+  font-size: 1rem;
+  color: var(--lightgrey);
+}
+.education-description {
+  color: var(--darkgrey);
+}
+.fa-graduation-cap {
+  color: var(--lightgrey);
+}
