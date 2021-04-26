@@ -63,6 +63,7 @@
 
 .skills .skill-content .skill .skill-img-container {
     width: 70px;
+    transition: all 0.2s linear;
 }
 
 .skills .skill-content .skill h3.skill-title {

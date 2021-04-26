@@ -32,6 +32,7 @@
     z-index: 2;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
     cursor: pointer;
+    transition: all 0.2s ease-out;
 }
 
 .projects .project-wrapper .cards-container:before,

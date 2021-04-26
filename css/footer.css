@@ -20,6 +20,7 @@ footer .footer-container .upper-footer {
 footer .footer-container .upper-footer .social-contact,
 footer .footer-container .upper-footer .address-contact {
     margin: 2rem 5rem;
+    transition: all 0.6s ease;
 }
 
 footer .footer-container .upper-footer .social-contact h2,
