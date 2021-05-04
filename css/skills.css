@@ -8,17 +8,18 @@
 
 /* Scroll Animation Toggle */
 
-
+/*
 .slide-in {
     opacity: 0;
     transform: scale(0.8);
-    transition: all 3s ease;
+    transition: all 2s ease;
 }
 
 .slide-in.active {
     opacity: 1;
     transform: translateX(0%) scale(1);
 }
+*/
 
 /* Skills Custom Styles */
 
@@ -46,12 +47,19 @@
 }
 
 .skills .skill-content .skill {
-    margin: 40px 35px;
+    margin: 40px 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: all 1s ease;
 }
+
+/*
+.skills .skill-content .skill:hover {
+    transform: scale(1.2);
+}
+*/
 
 .skills .skill-content .skill .skill-img-container {
     width: 70px;
@@ -87,4 +95,10 @@
 }
 #reactjs_icon path {
     fill: #00d8ff;
+}
+#python_icon path.p1 {
+    fill: #ffde57;
+}
+#python_icon path.p2 {
+    fill: #4584b6;
 }

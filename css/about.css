@@ -8,58 +8,128 @@
 
 .about {
     width: 100%;
-    padding: 4%;
-    padding-top: 7rem;
+    padding: 7rem 2rem 4rem;
 }
 
-.heading {
-    width: 100%;
+.about_heading {
+    position: relative;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--darkgrey);
     text-align: center;
-    margin-bottom: 15px;
-    padding: 0;
+    letter-spacing: 1px;
 }
 
-.heading h2 {
-    font-size: 4rem;
-    text-align: left;
-    font-weight: 600;
+.about .about-content {
+    margin: 2rem auto;
+    padding: 2rem 3rem;
 }
 
-div.det {
-    margin-bottom: 15px;
-}
-
-.content {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1.5rem;
-}
-
-.about-image {
+.about .about-content .about-image {
+    padding: 1rem 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.about-image .image {
-    height: 20rem;
-    width: 20rem;
+.about .about-content .about-image img {
+    padding: 2rem;
+    background: rgba(208, 213, 223, 0.3);
+    box-shadow: 0 2px 6px rgba(155, 164, 180, 0.8);
     border-radius: 50rem;
 }
 
-.contentbox {
-    margin-left: 5rem;
+.about .about-content .about-desc {
+    padding: 1rem 3rem;
 }
 
-.contentbox h3 {
-    font-size: 2rem;
+.about .about-content .about-desc h2.about-title {
+    margin: 14px 0;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: var(--darkblue);
 }
 
-.contentbox p {
-    font-size: 1.5rem;
-    margin-top: 1.5rem;
+.about .about-content .about-desc h4.about-subtitle {
+    margin: 10px 0;
+    font-size: 26px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    color: var(--lightblue);
 }
 
-.about-subtitle {
-    margin-bottom: 1rem;
+.about .about-content .about-desc p {
+    margin: 20px auto;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    color: var(--darkblack);
+    text-align: justify;
+}
+
+@media (max-width: 1120px) {
+    .about {
+        padding: 2rem 0;
+        padding-top: 7rem;
+    }
+
+    .about .about-content {
+        padding: 2rem 1rem;
+    }
+
+    .about .about-content .about-image {
+        padding: 1rem 2rem;
+    }
+
+    .about .about-content .about-image img {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .about .about-content .about-image {
+        padding: 1rem 1rem;
+    }
+
+    .about .about-content .about-image img {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 2rem 1rem;
+        padding-top: 7rem;
+    }
+
+    .about .about-content .about-image {
+        padding: 2rem 12rem;
+    }
+
+    .about .about-content .about-image img {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 620px) {
+    .about .about-content .about-image {
+        padding: 2rem 6rem;
+    }
+
+    .about .about-content .about-image img {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .about .about-content .about-desc {
+        padding: 1rem 1rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .about .about-content .about-image {
+        padding: 2rem 2rem;
+    }
 }

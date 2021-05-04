@@ -1,0 +1,108 @@
+/* Main Font in (style.css) */
+/* If required new font add here! */
+
+/* All Custom Colors in (style.css) || [:root] || */
+/* Add / Change if required! */
+
+/* Education Section Styles Start */
+
+.education {
+    background: var(--offwhite);
+    padding: 5rem 2rem 1rem;
+}
+
+.education-heading {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--darkgrey);
+    letter-spacing: 1px;
+}
+
+.education-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 100px;
+    padding: 100px;
+}
+
+.education-item {
+    display: flex;
+    gap: 20px;
+    max-width: 40%;
+}
+
+.education-icon {
+    font-size: 2rem;
+}
+
+.education-institution {
+    font-weight: 600;
+    background: -webkit-linear-gradient(45deg, var(--lightpink), #c80049);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.education-career {
+    font-size: 1.2rem;
+    margin-bottom: 1.4rem;
+    display: inline-block;
+    position: relative;
+}
+
+.education-career::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 4px;
+    bottom: -10px;
+    left: 0;
+    border-radius: 4px;
+    background: -webkit-linear-gradient(45deg, var(--lightpink), #c80049);
+}
+
+.education-years {
+    font-size: 1rem;
+    color: var(--lightgrey);
+}
+
+.education-description {
+    color: var(--darkgrey);
+}
+
+.fa-graduation-cap {
+    color: var(--lightgrey);
+}
+
+@media (max-width: 992px) {
+    .education-content {
+        padding: 100px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .education-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+    }
+    .education-item {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .education-content {
+        padding: 40px 0;
+    }
+    .education-item {
+        flex-direction: column;
+    }
+    .education-institution {
+        font-size: 1.6rem;
+    }
+}
